@@ -12,13 +12,15 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="../" class="logo">
+            <div class="logo">
+                Gess<span>Web</span>
+            </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Karya & Project</a></li>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#karya">Karya & Project</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -28,7 +30,7 @@
     </div>
 </div>
 <!--------------------------Profile--------------------------->
-<div class="profile">
+<div id="profile" class="profile">
     <div class="container">
         <div class="row">
             <div class="profile-col-1">
@@ -64,7 +66,7 @@
     </div>
 </div>
 <!--------------Karya & Project-------------->
-<div class="karya">
+<div id="karya" class="karya">
     <div class="container">
         <h1 class="sub-title">My Project</h1>
         <div class="karya-list">
@@ -92,7 +94,7 @@
 </div>
 
 <!--------------------MEDIA-------------------->
-<div class="media">
+<div id="media" class="media">
     <div class="container">
         <h1 class="sub-title">Media</h1>
         <div class="media-list">
@@ -120,7 +122,7 @@
 </div>
 
 <!-------------Contact-------------->
-<div class="contact">
+<div id="contact" class="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -164,8 +166,5 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
-
-
-
 </body>
 </html>

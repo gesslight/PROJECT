@@ -27,7 +27,12 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #010848;
+}
+.logo span{
+    color: #d2ad94;
 }
 
 nav ul li{
@@ -87,6 +92,7 @@ nav ul li a:hover::after{
 .profile-col-2{
     flex-basis: 60%;
     text-align: justify;
+    color: #d2ad94;
 }
 
 .sub-title{
