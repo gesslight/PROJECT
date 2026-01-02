@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portofolio by Isma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="../" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Karya & Project</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Mahasiswa Sistem Informasi</p>
+            <h1>Halo, I'm <span>Isma</span><br>Khoyriyah from Indonesia</h1>
+        </div>
+    </div>
+</div>
+<!--------------------------Profile--------------------------->
+<div class="profile">
+    <div class="container">
+        <div class="row">
+            <div class="profile-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="profile-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Saya merupakan mahasiswa Sistem Informasi yang tertarik mempelajari bagaimana teknologi 
+                    dapat membantu menyelesaikan permasalahan di dunia nyata. Saya senang mempelajari analisis sistem,
+                    database,dan pengembangan sistem informasi, serta terus berusaha mengembangkan kemampuan 
+                    teknis dan logika berpikir secara berkelanjutan.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C++</span><br>Basic Pemrograman</li>
+                        <li><span>HTML</span><br>Basic Pemrograman</li>
+                        <li><span>SQL</span><br>Basic Pemrograman</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>SDN Duri Kosambi 07 Pagi</li>
+                        <li><span>2022</span><br>SMP Negeri 176 Jakarta Barat</li>
+                        <li><span>2025</span><br>SMKS Telkom Sandhy Putra Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------Karya & Project-------------->
+<div class="karya">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="karya-list">
+            <div>
+                <h2>Project 1</h2>
+                <img src="Project 1.jpeg">
+                <p>Proyek ini merupakan aplikasi pengolah data mahasiswa berbasis web sederhana 
+                    yang dirancang untuk menghitung usia secara otomatis berdasarkan input tahun lahir.</p>
+            </div>
+            <div>
+                <h2>Project 2</h2>
+                <img src="Project 2.jpeg">
+                <p>Proyek ini merupakan pengembangan Form Penerimaan Karyawan Baru
+                    berbasis web yang dirancang untuk mendigitalisasi proses rekrutmen.</p>
+            </div>
+            <div>
+                <h2>Project 3</h2>
+                <img src="Project 3.jpeg">
+                <p>Proyek ini merupakan implementasi tata letak (layout) website 
+                    menggunakan struktur HTML dasar yang terdiri dari header statis, menu
+                    navigasi samping (sidebar), konten utama, dan footer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------MEDIA-------------------->
+<div class="media">
+    <div class="container">
+        <h1 class="sub-title">Media</h1>
+        <div class="media-list">
+            <div class="media">
+                <h2>Gambar</h2>
+                <img src="selfi.jpeg">
+            </div>
+            <div class="media">
+                <h2>Video</h2>
+                <video width="300" height="350" controls>
+                <source src="PKKMB.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="media">
+                <h2>Musik & Document</h2>
+                <h3>Musik</h3>
+                <audio controls autoplay loop muted>
+                <source src="Musik.mp3" type="audio/mp3">
+                </audio>
+                <h3>PDF Example</h3>
+                <a href="document.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------Contact-------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ismakhoyriyah27@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>08123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@hyrksii"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/hyrksii?igsh=cXQ2NXR5eTNvZWtp"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/isma-khoyriyah-7a2b1b366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; 2026 Isma.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+
+</body>
+</html>
