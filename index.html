@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
+                <form id="contactForm">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
@@ -164,6 +164,25 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+</script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault(); 
+
+    const name = this.Name.value;
+    const email = this.email.value;
+    const message = this.Message.value;
+
+    alert("Pesan berhasil dikirim!");
+
+    this.reset();
+
+    console.log({
+        name: name,
+        email: email,
+        message: message
+    });
+});
 </script>
 </body>
 </html>
